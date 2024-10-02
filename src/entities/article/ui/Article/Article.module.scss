@@ -1,0 +1,312 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  max-width: 938px;
+  word-break: break-all;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  &.list {
+    height: 160px;
+    word-break: break-word;
+    // overflow-x: hidden;
+  }
+
+  &.full {
+    flex-direction: column;
+    height: auto;
+
+    word-break: break-word; /* предотвращает выход длинных слов за пределы контейнера */
+    overflow-wrap: break-word; /* переносит длинные слова на новую строку */
+    white-space: normal; /* позволяет тексту автоматически переноситься */
+  }
+}
+
+.articleHeaderWrap {
+  display: flex;
+  gap: 40px;
+}
+
+.articleInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 75%;
+
+  & h1 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #1890ff;
+    font-weight: 600;
+  }
+
+  & h3 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #1890ff;
+  }
+
+  & p,
+  & h1,
+  & h3 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.articleInfoHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 13px;
+  // box-sizing: border-box;
+}
+
+.articleInfoTitle {
+  display: flex;
+  word-break: break-all; /* предотвращает выход длинных слов за пределы контейнера */
+  // overflow-wrap: break-word; /* переносит длинные слова на новую строку */
+  // white-space: normal; /* позволяет тексту автоматически переноситься */
+}
+
+.articleInfoError {
+  font-size: 16px;
+  font-weight: 400;
+
+  & svg {
+    margin-right: 8px;
+    font-size: 16px;
+    color: red;
+  }
+}
+
+.articleInfoFavorite {
+  display: flex;
+  gap: 5px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.articleInfoTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  & span {
+    font-size: 12px;
+    line-height: 14.52px;
+    font-weight: 400;
+    color: rgb(95, 95, 95);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    padding: 2px 4px;
+  }
+}
+
+.articleInfoDesc {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.articleAuthorWrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 25%;
+  gap: 20px;
+  // padding-right: 10px;
+}
+
+.articleAuthor {
+  display: flex;
+  // flex: 1 1 25%;
+  justify-content: flex-end;
+  text-align: right;
+  gap: 20px;
+  word-break: normal;
+  & p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.articleAuthorName {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+}
+
+.articleAuthorDate {
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.articleAuthorButtons {
+  display: flex;
+  gap: 12px;
+  // justify-content: flex-end;
+  align-items: center;
+  align-self: flex-end;
+  margin-bottom: 5px;
+  // width: 100%;
+}
+
+.deleteBtn,
+.editBtn {
+  height: 31.1px;
+  max-width: 65.23px;
+  min-width: 65.23px;
+  background-color: #ffff;
+  padding: 6px 17px 5px 17px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Inter';
+  border: 1px solid;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1); /* Увеличение кнопки при наведении */
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавление тени */
+  }
+}
+
+// Buttons Delete & Edit
+
+.deleteBtn {
+  color: #f5222d;
+  border-color: #f5222d;
+  max-width: 78px;
+
+  &:hover {
+    background-color: #f5222d; /* Изменение фона на красный при наведении */
+    color: #fff; /* Изменение текста на белый при наведении */
+  }
+}
+
+.editBtn {
+  color: #52c41a;
+  border-color: #52c41a;
+  max-width: 65.23px;
+
+  &:hover {
+    background-color: #52c41a; /* Изменение фона на зеленый при наведении */
+    color: #fff; /* Изменение текста на белый при наведении */
+  }
+}
+
+.articleBody {
+  font-size: 20px;
+  line-height: 28px;
+  & img {
+    max-width: 100%; /* Ограничивает максимальную ширину изображения размерами контейнера */
+    height: auto; /* Сохраняет пропорции изображения при его изменении */
+    display: block; /* Убирает возможные пробелы снизу изображения */
+    margin: 0 auto; /* Центрирует изображение, если оно меньше ширины контейнера */
+  }
+}
+
+.img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+// markdown tags
+pre {
+  background-color: #00000033;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+code {
+  color: #0084ff;
+  background-color: #16bb0079;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding: 10px 20px;
+  border-left: 5px solid #00a4fc;
+  background-color: #0095ff26;
+  color: #555;
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0; /* Убирает отступы у параграфов внутри blockquote */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ffc400;
+  padding: 8px;
+}
+
+th {
+  background-color: #ff2a0073;
+  text-align: left;
+  font-weight: 600;
+  color: #4d0701fb;
+}
+
+td {
+  font-weight: 300;
+}
+
+hr {
+  border: 1px solid rgba(23, 0, 44, 0.526);
+}
+
+// Списки с чекбоксами
+ul {
+  padding-left: 20px; /* Отступ для маркеров списка */
+  list-style-type: disc; /* Черные точки для обычных списков */
+}
+
+// Вложенные списки
+ul ul {
+  list-style-type: circle; /* Пустые кружки для вложенных списков */
+}
+
+// Стили для ul с чекбоксами
+ul:has(input[type='checkbox']) {
+  padding-left: 0; /* Убираем отступ */
+  list-style-type: none; /* Убираем маркеры */
+}
+
+ul:has(input[type='checkbox']) li {
+  display: flex;
+  align-items: center; /* Центрируем чекбокс и текст по вертикали */
+  padding-left: 0;
+}
+
+ul:has(input[type='checkbox']) li input[type='checkbox'] {
+  margin-right: 8px; /* Отступ между чекбоксом и текстом */
+}
+
+a {
+  text-decoration: none;
+}

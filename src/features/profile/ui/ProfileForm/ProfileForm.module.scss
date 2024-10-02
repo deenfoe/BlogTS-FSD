@@ -1,0 +1,118 @@
+.profileTitle {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 0 25px;
+}
+
+.editProfileForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileButton {
+  height: 40px;
+  background-color: #1890ff;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 9px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:disabled {
+    background-color: #188fff68; /* Цвет для неактивной кнопки */
+    cursor: not-allowed;
+  }
+}
+
+.errorText {
+  margin: 0;
+  padding: 0;
+  color: red; /* Сообщения об ошибках с сервера */
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: 'Roboto';
+}
+
+// .profileTitle {
+//   font-family: 'Roboto';
+//   font-weight: 700;
+//   font-size: 20px;
+//   line-height: 28px;
+//   text-align: center;
+//   margin: 0 0 25px;
+// }
+
+// .editProfileForm {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .profileLabel {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 5px;
+//   margin-bottom: 12px;
+
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 22px;
+// }
+
+// .profileInput {
+//   height: 40px;
+//   border-radius: 4px;
+//   border: 1px solid #d9d9d9;
+//   box-sizing: border-box;
+//   padding: 8px 12px;
+//   transition: border-color 0.3s;
+//   &:hover {
+//     border: 1px solid #484848;
+//   }
+//   &:focus {
+//     border: 1px solid #1890ff; /* синий цвет рамки при фокусе */
+//     outline: none; /* убираем стандартное выделение */
+//   }
+// }
+
+// .inputError {
+//   border: 1px solid red;
+// }
+
+// .errorText {
+//   margin: 0;
+//   padding: 0;
+//   color: red; /* или любой другой цвет */
+//   font-size: 14px; /* уменьшите размер шрифта по мере необходимости */
+//   line-height: 22px;
+//   font-weight: 400;
+//   font-family: 'Roboto';
+// }
+
+// .profileButton {
+//   height: 40px;
+//   background-color: #1890ff;
+//   border-radius: 4px;
+//   border: none;
+//   color: #ffffff;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 24px;
+//   text-align: center;
+//   margin-top: 9px;
+//   cursor: pointer;
+//   transition: background-color 0.3s;
+
+//   &:disabled {
+//     background-color: #188fff68; /* Цвет для неактивной кнопки */
+//     cursor: not-allowed;
+//   }
+// }

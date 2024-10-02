@@ -1,0 +1,140 @@
+.articleFormContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+}
+.articleForm {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  // box-sizing: border-box;
+}
+
+.articleFormTitle {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.articleFormLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.articleFormInput {
+  color: #262626;
+  font-size: 16px;
+  line-height: 22px;
+  border: 1px solid #d9d9d9;
+  height: 40px;
+  border-radius: 3px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  // &:hover {
+  //   border: 1px solid #1890ff;
+  // }
+  &:focus {
+    border: 1px solid #1890ff; /* синий цвет рамки при фокусе */
+    outline: none; /* убираем стандартное выделение */
+  }
+}
+
+.errorText {
+  margin: 0;
+  padding: 0;
+  color: red; /* или любой другой цвет */
+  font-size: 14px; /* уменьшите размер шрифта по мере необходимости */
+  line-height: 22px;
+  font-weight: 400;
+  font-family: 'Roboto';
+}
+
+.articleFormTextarea {
+  width: 100%;
+  height: 168px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+
+  box-sizing: border-box;
+
+  // &:hover {
+  //   border: 1px solid #1890ff;
+  // }
+  &:focus {
+    border: 1px solid #1890ff; /* синий цвет рамки при фокусе */
+    outline: none; /* убираем стандартное выделение */
+  }
+}
+
+.articleFormTags {
+  display: flex;
+  gap: 17px;
+  flex-wrap: wrap;
+  // box-sizing: border-box;
+  // justify-content: flex-start;
+}
+
+.articleFormTagItem {
+  display: flex;
+  gap: 16px;
+}
+
+.articleFormButtonWrap {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.articleFormButton {
+  height: 40px;
+  border-radius: 5px;
+  max-width: 319px;
+  width: 100%;
+  color: #fff;
+  background-color: #1890ff;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.1s;
+
+  &:hover {
+    background-color: #1071e1; /* более темный оттенок для эффекта при наведении */
+  }
+
+  &:active {
+    transform: translateY(2px); /* создаем эффект "продавливания" */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); /* добавляем легкую тень для эффекта глубины */
+  }
+
+  &:disabled {
+    background-color: #188fff68; /* Цвет для неактивной кнопки */
+    cursor: not-allowed;
+  }
+}
+
+.deleteBtn {
+  height: 40px;
+  border-radius: 5px;
+  max-width: 120px;
+  border: 1px solid #f5222d;
+  color: #f5222d;
+  background-color: #ffff;
+  padding: 8px 36px;
+}
+
+.addBtn {
+  height: 40px;
+  border-radius: 5px;
+  max-width: 136px;
+  border: 1px solid #1890ff;
+  color: #1890ff;
+  background-color: #ffff;
+  padding: 8px 36px;
+}

@@ -1,0 +1,112 @@
+@import '/node_modules/normalize.css/normalize.css';
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src:
+    url('./assets/fonts/Inter/Inter-ExtraLight.woff2') format('woff2'),
+    url('./assets/fonts/Inter/Inter-ExtraLight.otf') format('opentype'),
+    url('./assets/fonts/Inter/Inter-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300; /* Light weight */
+  font-display: swap;
+  src:
+    url('./assets/fonts/Inter/Inter-Light.woff2') format('woff2'),
+    url('./assets/fonts/Inter/Inter-Light.otf') format('opentype'),
+    url('./assets/fonts/Inter/Inter-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url('./assets/fonts/Inter/Inter-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Inter/Inter-Regular.otf') format('opentype'),
+    url('./assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    url('./assets/fonts/Inter/Inter-Medium.woff2') format('woff2'),
+    url('./assets/fonts/Inter/Inter-Medium.otf') format('opentype'),
+    url('./assets/fonts/Inter/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    url('./assets/fonts/Inter/Inter-SemiBold.woff2') format('woff2'),
+    url('./assets/fonts/Inter//Inter-SemiBold.otf') format('opentype'),
+    url('./assets/fonts/Inter/Inter-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300; /* Light weight */
+  font-display: swap;
+  src:
+    url('./assets/fonts/Roboto/Roboto-Light.eot') format('eot'),
+    url('./assets/fonts/Roboto/Roboto-Light.woff') format('woff'),
+    url('./assets/fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400; /* Regular weight */
+  font-display: swap;
+  src:
+    url('./assets/fonts/Roboto/Roboto-Regular.eot') format('eot'),
+    url('./assets/fonts/Roboto/Roboto-Regular.woff') format('woff'),
+    url('./assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500; /* Medium weight */
+  font-display: swap;
+  src:
+    url('./assets/fonts/Roboto/Roboto-Medium.eot') format('eot'),
+    url('./assets/fonts/Roboto/Roboto-Medium.woff') format('woff'),
+    url('./assets/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700; /* Bold weight */
+  font-display: swap;
+  src:
+    url('./assets/fonts/Roboto/Roboto-Bold.eot') format('eot'),
+    url('./assets/fonts/Roboto/Roboto-Bold.woff') format('woff'),
+    url('./assets/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+html {
+  background-color: #ebeef3;
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+/* ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+} */

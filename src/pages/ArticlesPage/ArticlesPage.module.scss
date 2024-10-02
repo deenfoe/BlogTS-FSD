@@ -1,0 +1,25 @@
+.articlesPage {
+  display: flex;
+  flex-direction: column;
+  max-width: 938px; //
+  width: 100%;
+  & ul,
+  li {
+    margin-top: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-bottom: 26px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
